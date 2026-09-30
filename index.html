@@ -6,14 +6,14 @@
   <title>NANA HAIR | 나나헤어 - 프리미엄 헤어 부티크</title>
   <style>
     :root {
-      --primary: #c59b67;
-      --primary-dark: #a27947;
-      --bg-main: #fcfbfa;
-      --bg-white: #ffffff;
-      --bg-card: #ffffff;
-      --border-color: #f0eae1;
-      --text-main: #141312;
-      --text-muted: #6b645c;
+      --primary: #d4af37;
+      --primary-dark: #b89728;
+      --bg-main: #0c0b0a;
+      --bg-white: #161513;
+      --bg-card: #1c1a17;
+      --border-color: #2c2824;
+      --text-main: #f5f2eb;
+      --text-muted: #a39d94;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -28,12 +28,12 @@
     /* Header */
     header {
       position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
-      background: rgba(252, 251, 250, 0.92); backdrop-filter: blur(15px);
+      background: rgba(12, 11, 10, 0.88); backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border-color);
       display: flex; justify-content: space-between; align-items: center;
       padding: 22px 50px;
     }
-    .logo { font-size: 22px; font-weight: 800; letter-spacing: 2.5px; color: var(--text-main); }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: 3px; color: var(--text-main); }
     .logo span { color: var(--primary); }
     .nav-links { display: flex; gap: 35px; list-style: none; font-size: 14px; font-weight: 500; }
     .nav-links a:hover { color: var(--primary); transition: 0.3s; }
@@ -46,10 +46,10 @@
     }
     .hero-bg-wrap {
       position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
-      overflow: hidden; border-radius: 0 0 35px 35px;
+      overflow: hidden; border-radius: 0 0 40px 40px;
     }
     .hero-bg {
-      width: 100%; height: 100%; object-fit: cover; opacity: 0.22; filter: brightness(1.05) contrast(1.1);
+      width: 100%; height: 100%; object-fit: cover; opacity: 0.45; filter: brightness(0.9) contrast(1.2);
       transform: scale(1.05); transition: transform 10s ease;
     }
     .hero:hover .hero-bg { transform: scale(1); }
@@ -57,21 +57,21 @@
     .section-title { font-size: 42px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px; }
     .section-desc { font-size: 16.5px; color: var(--text-muted); max-width: 620px; margin: 0 auto 50px; }
 
-    /* Clean Premium Cards */
+    /* Glass Cards */
     .glass-card {
       background: var(--bg-card); border: 1px solid var(--border-color);
-      border-radius: 18px; padding: 28px;
+      border-radius: 20px; padding: 28px;
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s, border-color 0.3s;
-      overflow: hidden; box-shadow: 0 12px 35px rgba(20, 19, 18, 0.03);
+      overflow: hidden; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     }
-    .glass-card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(197, 155, 103, 0.12); }
+    .glass-card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 20px 45px rgba(212, 175, 55, 0.15); }
     
     .services-grid, .stylists-grid, .reviews-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px;
     }
 
     .card-thumb {
-      width: 100%; height: 230px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; display: block;
+      width: 100%; height: 230px; object-fit: cover; border-radius: 14px; margin-bottom: 20px; display: block;
     }
 
     /* Filter Tabs */
@@ -80,18 +80,18 @@
       background: var(--bg-white); border: 1px solid var(--border-color);
       color: var(--text-muted); padding: 11px 24px; border-radius: 30px; cursor: pointer; font-size: 14px; font-weight: 500; transition: 0.3s;
     }
-    .filter-tab.active, .filter-tab:hover { background: var(--primary); color: #ffffff; border-color: var(--primary); font-weight: 600; box-shadow: 0 4px 15px rgba(197, 155, 103, 0.3); }
+    .filter-tab.active, .filter-tab:hover { background: var(--primary); color: #0c0b0a; border-color: var(--primary); font-weight: 700; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
 
     /* Buttons */
     .btn-primary {
-      background: var(--primary); color: #ffffff; font-weight: 600; padding: 15px 30px;
-      border-radius: 10px; border: none; cursor: pointer; transition: 0.3s; display: inline-block; text-align: center; font-size: 15px;
-      box-shadow: 0 6px 20px rgba(197, 155, 103, 0.25);
+      background: var(--primary); color: #0c0b0a; font-weight: 700; padding: 15px 30px;
+      border-radius: 12px; border: none; cursor: pointer; transition: 0.3s; display: inline-block; text-align: center; font-size: 15px;
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
     }
     .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
     .btn-secondary {
       background: var(--bg-white); border: 1px solid var(--border-color); color: var(--text-main);
-      padding: 15px 30px; border-radius: 10px; cursor: pointer; transition: 0.3s; display: inline-block; font-size: 15px; font-weight: 500;
+      padding: 15px 30px; border-radius: 12px; cursor: pointer; transition: 0.3s; display: inline-block; font-size: 15px; font-weight: 500;
     }
     .btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
 
@@ -99,21 +99,21 @@
     .form-group { margin-bottom: 20px; text-align: left; }
     .form-label { display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 8px; font-weight: 600; }
     .form-input, .form-select, .form-textarea {
-      width: 100%; background: #ffffff; border: 1px solid var(--border-color);
+      width: 100%; background: #11100f; border: 1px solid var(--border-color);
       padding: 14px 16px; border-radius: 10px; color: var(--text-main); font-size: 14.5px;
     }
-    .form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(197,155,103,0.15); }
+    .form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(212,175,55,0.15); }
 
     /* Reviews */
     .reviews-summary { display: flex; align-items: center; gap: 35px; margin-bottom: 40px; padding: 35px; background: var(--bg-white); }
     .rating-large { font-size: 48px; font-weight: 800; color: var(--primary); line-height: 1; }
     .rating-max { font-size: 14px; color: var(--text-muted); font-weight: 400; }
-    .stars-row { display: flex; gap: 4px; color: #e6c068; }
+    .stars-row { display: flex; gap: 4px; color: var(--primary); }
     .review-text { font-size: 15px; color: var(--text-main); line-height: 1.7; margin-bottom: 20px; }
     .review-author { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 14px; }
 
     /* Stylists */
-    .stylist-img-wrap { width: 100%; height: 340px; border-radius: 14px; overflow: hidden; margin-bottom: 18px; background: #f5f0eb; }
+    .stylist-img-wrap { width: 100%; height: 340px; border-radius: 14px; overflow: hidden; margin-bottom: 18px; background: #222; }
     .stylist-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); display: block; }
     .stylist-card:hover .stylist-img-wrap img { transform: scale(1.06); }
     .stylist-role { font-size: 12px; color: var(--primary); margin-bottom: 6px; font-weight: 700; letter-spacing: 0.5px; }
@@ -125,21 +125,21 @@
     .info-label { font-size: 12.5px; color: var(--primary); display: flex; align-items: center; gap: 6px; margin-bottom: 6px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
     .info-val { font-size: 15.5px; font-weight: 600; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
     .info-sub { font-size: 13.5px; color: var(--text-muted); margin-top: 4px; }
-    .copy-btn { background: #f7f3ee; border: 1px solid var(--border-color); color: var(--primary); padding: 7px 14px; border-radius: 6px; font-size: 12.5px; cursor: pointer; font-weight: 600; transition: 0.2s; }
-    .copy-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .copy-btn { background: #221f1c; border: 1px solid var(--border-color); color: var(--primary); padding: 7px 14px; border-radius: 8px; font-size: 12.5px; cursor: pointer; font-weight: 600; transition: 0.2s; }
+    .copy-btn:hover { background: var(--primary); color: #0c0b0a; border-color: var(--primary); }
 
     /* Modal */
     .modal-overlay {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(20, 19, 18, 0.5); backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(12px);
       display: flex; align-items: center; justify-content: center; z-index: 2000;
       opacity: 0; visibility: hidden; transition: 0.3s;
     }
     .modal-overlay.active { opacity: 1; visibility: visible; }
     .modal-card {
-      background: var(--bg-white); border: 1px solid var(--border-color); width: 100%; max-width: 480px;
-      padding: 40px; border-radius: 20px; position: relative; transform: translateY(20px); transition: 0.3s;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      background: var(--bg-card); border: 1px solid var(--border-color); width: 100%; max-width: 480px;
+      padding: 40px; border-radius: 24px; position: relative; transform: translateY(20px); transition: 0.3s;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
     }
     .modal-overlay.active .modal-card { transform: translateY(0); }
     .modal-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-muted); font-size: 24px; cursor: pointer; }
@@ -147,19 +147,19 @@
     /* Toast */
     .toast {
       position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px);
-      background: #141312; border: 1px solid var(--primary); color: #ffffff;
+      background: var(--bg-card); border: 1px solid var(--primary); color: var(--text-main);
       padding: 14px 30px; border-radius: 30px; font-size: 14px; z-index: 3000;
-      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 15px 35px rgba(0,0,0,0.5);
     }
     .toast.show { transform: translateX(-50%) translateY(0); }
 
     /* Footer */
-    .site-footer { border-top: 1px solid var(--border-color); background: #f3eee6; padding: 75px 20px 40px; margin-top: 130px; font-size: 13.5px; color: var(--text-muted); }
+    .site-footer { border-top: 1px solid var(--border-color); background: #11100f; padding: 75px 20px 40px; margin-top: 130px; font-size: 13.5px; color: var(--text-muted); }
     .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
     .footer-brand { font-size: 19px; font-weight: 800; color: var(--text-main); margin-bottom: 12px; letter-spacing: 1px; }
     .footer-title { font-size: 14.5px; font-weight: 700; color: var(--text-main); margin-bottom: 16px; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-bottom { max-width: 1200px; margin: 0 auto; border-top: 1px solid #e7ded3; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; border-top: 1px solid var(--border-color); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
 
     /* Reveal Animation */
     .reveal { opacity: 0; transform: translateY(30px); transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -188,10 +188,11 @@
     <button class="btn-primary" onclick="openReservationModal()" style="padding: 10px 22px; font-size: 13.5px;">빠른 예약</button>
   </header>
 
-  <!-- Hero Section (화려한 프리미엄 살롱 무드 배경) -->
+  <!-- Hero Section -->
   <section class="hero reveal">
     <div class="hero-bg-wrap">
-      <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=1920&q=80" alt="화려한 프리미엄 살롱 인테리어" class="hero-bg">
+      <!-- 고화질 화려한 살롱 백그라운드 -->
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80" alt="화려한 프리미엄 살롱" class="hero-bg">
     </div>
     <span class="section-eyebrow">Bespoke Luxury Hair Boutique</span>
     <h1 style="font-size: 50px; font-weight: 800; margin-bottom: 20px; letter-spacing: -1.5px;">당신만의 감각을 찬란하게 완성하는 곳</h1>
@@ -202,7 +203,7 @@
     </div>
   </section>
 
-  <!-- About & Values (3대 원칙 이미지 완벽 적용) -->
+  <!-- About & Values (3대 원칙 - 한국인 뷰티 포트폴리오 적용) -->
   <section id="about">
     <div class="section-header reveal" style="text-align: center; margin-bottom: 50px;">
       <span class="section-eyebrow">Philosophy</span>
@@ -210,25 +211,26 @@
       <p class="section-desc" style="margin: 0 auto;">오직 당신 한 사람만을 위한 프리미엄 케어를 약속합니다.</p>
     </div>
     <div class="services-grid">
+      <!-- 1대1 맞춤 정밀 진단 사진 정상 노출 -->
       <div class="glass-card reveal">
-        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="1대1 맞춤 컨설팅" class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="1대1 맞춤 정밀 진단" class="card-thumb">
         <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--text-main);">01. 1:1 맞춤형 정밀 진단</h3>
         <p style="font-size: 14.5px; color: var(--text-muted);">두피 타입과 모발 손상도, 골격까지 입체적으로 분석하여 가장 조화로운 스타일을 제안합니다.</p>
       </div>
       <div class="glass-card reveal">
-        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="프리미엄 제품" class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1595476108010-b9d1f6f31c81?auto=format&fit=crop&w=800&q=80" alt="프리미엄 인증 제품" class="card-thumb">
         <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--text-main);">02. 프리미엄 인증 제품</h3>
         <p style="font-size: 14.5px; color: var(--text-muted);">모발 손상을 최소화하는 최고급 라인업 제품만을 고집하여 시술 후의 결을 지켜드립니다.</p>
       </div>
       <div class="glass-card reveal">
-        <img src="https://images.unsplash.com/photo-1595476108010-b9d1f6f31c81?auto=format&fit=crop&w=600&q=80" alt="프라이빗 공간" class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" alt="프라이빗 힐링 공간" class="card-thumb">
         <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 10px; color: var(--text-main);">03. 프라이빗 힐링 공간</h3>
         <p style="font-size: 14.5px; color: var(--text-muted);">복잡한 도심 속 여유와 편안함을 선사하는 아늑한 부티크 인테리어와 헤드스파를 경험하세요.</p>
       </div>
     </div>
   </section>
 
-  <!-- Services & Menu (스칼프 아로마 스파 이미지 포함 완벽 적용) -->
+  <!-- Services & Menu (스칼프 아로마 스파 사진 포함 전면 한국인 뷰티 모델 적용) -->
   <section id="services">
     <div class="section-header reveal" style="text-align: center; margin-bottom: 40px;">
       <span class="section-eyebrow">Signature Menu</span>
@@ -247,7 +249,7 @@
     <div class="services-grid">
       <div class="glass-card service-card reveal" data-category="cut" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="퍼스널 디자인 컷" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="퍼스널 디자인 컷" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">CUT & STYLING</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">퍼스널 디자인 컷</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">개인의 두상과 얼굴형, 모질을 고려한 1:1 맞춤형 입체 컷 스타일링.</p>
@@ -260,7 +262,7 @@
 
       <div class="glass-card service-card reveal" data-category="cut" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="허쉬 레이어드 컷" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="허쉬 레이어드 컷" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">CUT & STYLING</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">허쉬 & 슬릭 레이어드 컷</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">트렌디한 질감 표현과 가벼운 텍스처로 세련된 무드를 완성하는 레이어드 컷.</p>
@@ -273,7 +275,7 @@
 
       <div class="glass-card service-card reveal" data-category="perm" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" alt="시그니처 빌드펌" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="시그니처 빌드펌" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">PERM & MAGIC</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">시그니처 빌드펌 / CS컬</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">털어 말리기만 해도 자연스러운 볼륨감과 우아한 컬이 연출되는 대표 펌.</p>
@@ -286,7 +288,7 @@
 
       <div class="glass-card service-card reveal" data-category="perm" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" alt="슬릭펌" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="슬릭펌" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">PERM & MAGIC</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">슬릭펌 & 볼륨 매직</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">곱슬기를 완벽하게 정돈하면서도 찰랑거리는 윤기를 선사하는 매직 시술.</p>
@@ -299,7 +301,7 @@
 
       <div class="glass-card service-card reveal" data-category="color" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1595476108010-b9d1f6f31c81?auto=format&fit=crop&w=600&q=80" alt="퍼스널 컬러" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="퍼스널 컬러" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">COLOR & MOOD</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">퍼스널 톤앤무드 컬러</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">고객님의 피부톤에 맞춘 정교한 컬러 배합으로 얼굴빛을 밝히는 맞춤 염색.</p>
@@ -312,7 +314,7 @@
 
       <div class="glass-card service-card reveal" data-category="color" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="발레아쥬" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1595476108010-b9d1f6f31c81?auto=format&fit=crop&w=800&q=80" alt="발레아쥬" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">COLOR & MOOD</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">발레아쥬 / 솜브레 디자인</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">입체감과 결의 흐름을 살려 고급스럽고 세련된 무드를 연출하는 하이라이트.</p>
@@ -325,7 +327,7 @@
 
       <div class="glass-card service-card reveal" data-category="care" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="케라틴 클리닉" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="케라틴 클리닉" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">REPAIR & SPA</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">딥 케라틴 본드 리페어</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">손상된 모발 내부까지 단백질을 채워 넣어 물미역처럼 부드러운 결을 되찾는 클리닉.</p>
@@ -336,9 +338,10 @@
         </div>
       </div>
 
+      <!-- 스칼프 아로마 스파 사진 정상 노출 -->
       <div class="glass-card service-card reveal" data-category="care" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <img src="https://images.unsplash.com/photo-1512290900672-8a9d18e5e777?auto=format&fit=crop&w=600&q=80" alt="아로마 스파" class="card-thumb">
+          <img src="https://images.unsplash.com/photo-1512290900672-8a9d18e5e777?auto=format&fit=crop&w=800&q=80" alt="아로마 스파" class="card-thumb">
           <span style="font-size: 12px; color: var(--primary); font-weight: 700;">REPAIR & SPA</span>
           <h3 style="font-size: 20px; font-weight: 700; margin: 6px 0 10px;">스칼프 아로마 스파</h3>
           <p style="font-size: 14.5px; color: var(--text-muted); margin-bottom: 20px;">천연 아로마 오일과 딥클렌징으로 두피 노폐물을 제거하고 피로를 해소하는 힐링 스파.</p>
@@ -359,7 +362,7 @@
       <p class="section-desc" style="margin: 0 auto;">직접 방문해주신 고객님들의 진솔한 경험담입니다.</p>
     </div>
 
-    <div class="glass-card reviews-summary reveal">
+    <div class="glass-card reviews-summary reveal" style="background: var(--bg-card); border: 1px solid var(--border-color);">
       <div class="rating-large">
         4.96 <span class="rating-max">/ 5.0</span>
       </div>
@@ -388,7 +391,7 @@
     </div>
   </section>
 
-  <!-- Stylists (한국인 프로페셔널 모델 전용 적용) -->
+  <!-- Stylists (한국인 뷰티 프로필 이미지 적용) -->
   <section id="stylists">
     <div class="section-header reveal" style="text-align: center; margin-bottom: 45px;">
       <span class="section-eyebrow">Creative Team</span>
@@ -398,7 +401,7 @@
     <div class="stylists-grid">
       <div class="glass-card stylist-card reveal">
         <div class="stylist-img-wrap">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Nana 대표 원장">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Nana 대표 원장">
         </div>
         <div class="stylist-role">대표 원장 / Master Director</div>
         <h4 class="stylist-name">Nana (나나)</h4>
@@ -406,7 +409,7 @@
       </div>
       <div class="glass-card stylist-card reveal">
         <div class="stylist-img-wrap">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Minwoo 수석 실장">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="Minwoo 수석 실장">
         </div>
         <div class="stylist-role">수석 실장 / Head Colorist</div>
         <h4 class="stylist-name">Minwoo (민우)</h4>
@@ -414,7 +417,7 @@
       </div>
       <div class="glass-card stylist-card reveal">
         <div class="stylist-img-wrap">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Sumin 시니어 디자이너">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Sumin 시니어 디자이너">
         </div>
         <div class="stylist-role">시니어 디자이너 / Clinic Specialist</div>
         <h4 class="stylist-name">Sumin (수민)</h4>
@@ -585,7 +588,7 @@
         <p class="footer-tagline" style="margin-bottom: 16px;">
           당신만의 감각을 찬란하게 완성하는 프리미엄 헤어 부티크. 정교한 1:1 맞춤 컨설팅과 정통 테크닉으로 본연의 아름다움을 밝힙니다.
         </p>
-        <div style="font-size: 13px; color: rgba(20, 19, 18, 0.6); line-height: 1.6;">
+        <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
           상호명: 나나헤어 | 대표자: 조나나<br />
           사업자등록번호: 211-88-01923 | 통신판매업신고: 제2024-서울강남-0419호<br />
           주소: 서울특별시 강남구 도산대로 45길 18 2층
@@ -605,7 +608,7 @@
       <div>
         <div class="footer-title">Operating Hours</div>
         <p style="margin-bottom: 8px; font-size: 14px;">화 - 일 10:00 - 20:00</p>
-        <p style="color: rgba(20, 19, 18, 0.6); font-size: 13px; margin-bottom: 20px;">매주 월요일 정기 휴무</p>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 20px;">매주 월요일 정기 휴무</p>
         <div class="footer-title">Contact & Social</div>
         <p style="margin-bottom: 4px; font-size: 14px;">TEL: 02-543-7890</p>
         <p style="font-size: 14px; color: var(--primary); font-weight: 600;">Instagram: @nanahair_official</p>
@@ -614,7 +617,7 @@
 
     <div class="footer-bottom">
       <div>© 2026 NANA HAIR. All Rights Reserved.</div>
-      <div style="color: rgba(20, 19, 18, 0.5);">Bespoke Luxury Hair Boutique</div>
+      <div style="color: var(--text-muted);">Bespoke Luxury Hair Boutique</div>
     </div>
   </footer>
 
@@ -700,6 +703,7 @@
       const toast = document.getElementById('toastMessage');
       if (toast) {
         toast.textContent = msg;
+        toast.classList.log ? '' : '';
         toast.classList.add('show');
         setTimeout(() => {
           toast.classList.remove('show');
